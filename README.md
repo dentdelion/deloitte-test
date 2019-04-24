@@ -36,16 +36,17 @@ Date: Wed, 24 Apr 2019 11:10:53 GMT
 ```
 
 Further you use JWT token to retrieve list of users; add them & delete them.
-- Retrieve list:
+
+* Retrieve list:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Njk2ODI1M30.r8tffQcev10QBcYFrUZuLszKVBNqVOKKNejRq0_TgLUX4d3x_nXyxsjBqBaZtJ8p0Bk-BL2sPdPl5yAroW3bdA" -X GET  http://localhost:8080/users
 ```
 
-- Delete:
+* Delete:
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Njk2ODI1M30.r8tffQcev10QBcYFrUZuLszKVBNqVOKKNejRq0_TgLUX4d3x_nXyxsjBqBaZtJ8p0Bk-BL2sPdPl5yAroW3bdA" -X DELETE  http://localhost:8080/users/1001
 ```
-- Add: 
+* Add: 
 ```
 curl -H "Content-Type: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU1Njk2ODI1M30.r8tffQcev10QBcYFrUZuLszKVBNqVOKKNejRq0_TgLUX4d3x_nXyxsjBqBaZtJ8p0Bk-BL2sPdPl5yAroW3bdA" -X POST
  -d '{
