@@ -1,19 +1,19 @@
-<h3>Simple web-service for users handling</h3>
+## Simple web-service for users handling
 Implemented via auth0-jwt library.
-<h4>How to run</h4>
-1. `mvn clean package`
-2. `docker-compose up`
+#### How to run
+1.     mvn clean package
+2.     docker-compose up
 
-<h4>Examples of use</h4>
+####Examples of use
 
-- Sign up:
+Sign up:
 ```
 curl -H "Content-Type: application/json" -X POST -d '{
     "username": "admin",
     "password": "password"
 }' http://localhost:8080/users/sign-up
 ```
-- Get JWT token
+Get JWT token:
 ```
 curl -i -H "Content-Type: application/json" -X POST -d '{
      "username": "admin",
