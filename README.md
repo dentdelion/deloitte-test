@@ -4,7 +4,7 @@ Implemented via auth0-jwt library.
 1.     mvn clean package
 2.     docker-compose up
 
-####Examples of use
+#### Examples of use
 
 Sign up:
 ```
